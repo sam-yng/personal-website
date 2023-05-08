@@ -4,10 +4,10 @@ import Intro from "./Intro";
 
 const Main: React.FC = () => {
   return (
-    <>
+    <main>
       <NavBar />
       <Intro />
-    </>
+    </main>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-scroll";
 
 const NavBar: React.FC = () => {
   return (
@@ -7,9 +8,10 @@ const NavBar: React.FC = () => {
       <h1 className="text-white md:text-[40px] text-[25px] font-daru">
         Sam Edgeworth
       </h1>
-      <div className="ml-auto text-white text-[18px] md:flex md:flex-row font-poppins space-x-8 hidden">
-        <h1
+      <ul className="ml-auto text-white text-[18px] md:flex md:flex-row font-poppins space-x-8 hidden">
+        <li
           className={classNames(
+            "hover:cursor-pointer",
             "hover:bg-white",
             "hover:text-black",
             "transition-colors",
@@ -20,10 +22,13 @@ const NavBar: React.FC = () => {
             "duration-300"
           )}
         >
-          About
-        </h1>
-        <h1
+          <Link to="about" spy={true} smooth={true}>
+            About
+          </Link>
+        </li>
+        <li
           className={classNames(
+            "hover:cursor-pointer",
             "hover:bg-white",
             "hover:text-black",
             "transition-colors",
@@ -34,10 +39,13 @@ const NavBar: React.FC = () => {
             "duration-300"
           )}
         >
-          Portfolio
-        </h1>
-        <h1
+          <Link to="portfolio" spy={true} smooth={true}>
+            Portfolio
+          </Link>
+        </li>
+        <li
           className={classNames(
+            "hover:cursor-pointer",
             "hover:bg-white",
             "hover:text-black",
             "transition-colors",
@@ -49,8 +57,8 @@ const NavBar: React.FC = () => {
           )}
         >
           Contact
-        </h1>
-      </div>
+        </li>
+      </ul>
     </nav>
   );
 };

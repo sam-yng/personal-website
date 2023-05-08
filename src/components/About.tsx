@@ -15,8 +15,17 @@ import ga from "../assets/logos/GA.png";
 
 const About: React.FC = () => {
   return (
-    <main className="h-[85vh]">
-      <h1 className="text-white text-[35px] font-daru flex">About Me</h1>
+    <main className="h-[100vh] pt-12" id="about">
+      <h1 className="text-white text-right mr-14 text-[35px] font-daru">
+        About Me
+      </h1>
+      <div className="flex justify-end mr-14 mt-4">
+        <p className="w-[55%] text-right text-[20px] font-poppins text-white">
+          Self taught Web Developer and prospective Junior Software Engineer
+          with a working knowledge of the latest front-end languages,
+          frameworks, and libraries.
+        </p>
+      </div>
       <div className="flex flex-row justify-between mt-6">
         <AboutBox
           title="Langauges"
