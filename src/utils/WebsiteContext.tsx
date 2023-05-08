@@ -1,10 +1,4 @@
-import React, {
-  createContext,
-  useContext,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { createContext, useContext, useMemo, useState } from "react";
 
 export type WebsiteContextType = {
   example: string;
@@ -18,15 +12,12 @@ export const WebsiteProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [example, setExample] = useState<string>("");
 
-  const ref = useRef(null);
-
   const value = useMemo(
     () => ({
-      ref,
       example,
       setExample,
     }),
-    [ref, example, setExample]
+    [example, setExample]
   );
 
   return (

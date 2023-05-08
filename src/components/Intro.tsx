@@ -10,7 +10,7 @@ const Intro: React.FC = () => {
         src={me}
         className="md:h-[28rem] -ml-10 rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
       />
-      <article className="ml-16 w-[40%] flex flex-col h-[28rem]">
+      <article className="ml-16 w-[45%] flex flex-col h-[28rem] justify-center">
         <h1 className="font-daru text-[35px]">Hi! I&apos;m Sam 🤠</h1>
         <p className="text-[25px] mt-4 font-poppins">
           Self taught Web Developer and prospective Junior Software Engineer
@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
           frameworks, and libraries.
           <br></br>. . .
         </p>
-        <div className="mt-auto flex flex-row space-x-6">
+        <div className="mt-6 flex flex-row space-x-6">
           <a
             href="https://github.com/sam-yng"
             className="rounded-md bg-white h-12 border-2 border-white px-4"

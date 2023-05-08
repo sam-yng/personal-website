@@ -13,3 +13,18 @@
   font-family: "poppins";
   src: url("../assets/fonts/Poppins-Light.ttf");
 }
+
+.bg-primaryblue {
+    --tw-bg-opacity: 1;
+    background-color: rgb(140 215 231/var(--tw-bg-opacity));
+}
+
+.bg-primarygreen {
+    --tw-bg-opacity: 1;
+    background-color: rgb(89 249 190/var(--tw-bg-opacity));
+}
+
+.bg-primarypurple {
+    --tw-bg-opacity: 1;
+    background-color: rgb(167 139 255/var(--tw-bg-opacity));
+}
