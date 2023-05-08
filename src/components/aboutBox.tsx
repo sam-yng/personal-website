@@ -1,17 +1,28 @@
-import React from "react";
-import BoxItem from "./BoxItem";
-import html from "../assets/logos/html.png";
+import React, { ReactElement } from "react";
 
 type AboutBoxProps = {
   title: string;
+  firstSpace: ReactElement;
+  secondSpace: ReactElement;
+  thirdSpace: ReactElement;
+  fourthSpace?: ReactElement;
 };
 
-const AboutBox = ({ title }: AboutBoxProps) => {
+const AboutBox = ({
+  title,
+  firstSpace,
+  secondSpace,
+  thirdSpace,
+  fourthSpace,
+}: AboutBoxProps) => {
   return (
     <main className="flex flex-col w-full text-center mx-14 mt-12">
       <h1 className="text-white text-[20px] font-poppins">{title}</h1>
-      <div className="bg-gray-700 mt-6">
-        <BoxItem name="HTML" image={html} />
+      <div className="flex flex-col mt-6 border-2 border-white rounded-md bg-[#1E1E1E] justify-between h-[50vh] p-6 hover:scale-110 delay-100 duration-300">
+        {firstSpace}
+        {secondSpace}
+        {thirdSpace}
+        {fourthSpace}
       </div>
     </main>
   );

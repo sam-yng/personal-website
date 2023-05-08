@@ -7,10 +7,12 @@ type BoxItemProps = {
 
 const BoxItem = ({ name, image }: BoxItemProps) => {
   return (
-    <div className="flex flex-row">
+    <main className="flex flex-row justify-between text-left mx-6 my-4">
       <img src={image} />
-      <h1>{name}</h1>
-    </div>
+      <div className="flex flex-col justify-center w-16">
+        <h1 className="text-white inline-block">{name}</h1>
+      </div>
+    </main>
   );
 };
 

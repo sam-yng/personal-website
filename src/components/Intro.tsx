@@ -3,7 +3,7 @@ import me from "../assets/images/me2.jpg";
 
 const Intro: React.FC = () => {
   return (
-    <main className="md:h-[85vh] flex flex-col md:flex-row mt-20 text-white md:justify-center">
+    <main className="md:h-[85vh] flex flex-col md:flex-row mt-28 text-white md:justify-center">
       <img
         src={me}
         className="md:h-[28rem] -ml-10 rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
