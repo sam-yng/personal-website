@@ -8,7 +8,7 @@ const Main: React.FC = () => {
       <NavBar />
       <Intro />
     </>
-  )
-}
+  );
+};
 
 export default Main;

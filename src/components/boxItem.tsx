@@ -1,17 +1,17 @@
 import React from "react";
 
-type boxItemProps = {
-  name: string
-  image: string
-}
+type BoxItemProps = {
+  name: string;
+  image: string;
+};
 
-const boxItem = ({name, image}: boxItemProps) => {
+const BoxItem = ({ name, image }: BoxItemProps) => {
   return (
     <div className="flex flex-row">
       <img src={image} />
       <h1>{name}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default boxItem;
+export default BoxItem;
