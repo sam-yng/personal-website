@@ -56,7 +56,9 @@ const NavBar: React.FC = () => {
             "duration-300"
           )}
         >
-          Contact
+          <a href="https://www.linkedin.com/in/sam-youngg/" target="blank">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

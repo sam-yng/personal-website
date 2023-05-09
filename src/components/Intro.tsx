@@ -23,11 +23,13 @@ const Intro: React.FC = () => {
         <div className="mt-6 flex flex-row md:justify-start justify-center space-x-6">
           <a
             href="https://github.com/sam-yng"
+            target="blank"
             className="rounded-md bg-white md:h-12 h-10 border-2 border-white md:px-4 px-2"
           >
             <img className="md:h-10 h-8" src={github} />
           </a>
           <a
+            target="blank"
             href="https://www.linkedin.com/in/sam-youngg/"
             className="rounded-md bg-white md:h-12 h-10 border-2 border-white md:px-4 px-2"
           >

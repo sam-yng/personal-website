@@ -1,4 +1,6 @@
 import React from "react";
+import code from "../assets/images/code.png";
+import eye from "../assets/images/eye.png";
 
 type PortfolioBoxProps = {
   image: string;
@@ -7,6 +9,8 @@ type PortfolioBoxProps = {
   firstTool?: string;
   secondTool?: string;
   thirdTool?: string;
+  viewSrc: string | undefined;
+  codeSrc?: string;
 };
 
 const PortfolioBox = ({
@@ -16,12 +20,14 @@ const PortfolioBox = ({
   firstTool,
   secondTool,
   thirdTool,
+  viewSrc,
+  codeSrc,
 }: PortfolioBoxProps) => {
   return (
     <main
-      className={`flex flex-col items-center rounded-lg h-[38vh] border-2 border-white hover:scale-110 delay-100 duration-300`}
+      className={`flex flex-col items-center rounded-lg border-2 border-white hover:scale-110 delay-100 duration-300`}
     >
-      <img className="w-[20rem]" src={image} />
+      <img className="w-[18rem]" src={image} />
       <div
         className={`text-center text-white rounded-lg bg-[#1E1E1E] w-full h-full pt-4`}
       >
@@ -32,6 +38,24 @@ const PortfolioBox = ({
         </div>
         <h1 className="font-poppins text-[20px]">{title}</h1>
         <p>{description}</p>
+        <div className="flex flex-row justify-center space-x-4 my-4">
+          <a
+            href={viewSrc}
+            target="blank"
+            className={`rounded-md bg-white border-2 border-white px-3 ${
+              viewSrc === undefined ? "opacity-50" : "opacity-100"
+            }`}
+          >
+            <img className="h-6" src={eye} />
+          </a>
+          <a
+            href={codeSrc}
+            target="blank"
+            className="rounded-md bg-white border-2 border-white px-3"
+          >
+            <img className="h-6" src={code} />
+          </a>
+        </div>
       </div>
     </main>
   );
