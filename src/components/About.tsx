@@ -15,18 +15,20 @@ import ga from "../assets/logos/GA.png";
 
 const About: React.FC = () => {
   return (
-    <main className="h-[100vh] pt-12" id="about">
-      <h1 className="text-white text-right mr-14 text-[35px] font-daru">
+    <main className="md:h-[100vh] md:block pt-20 md:pt-12 mx-6" id="about">
+      <h1 className="text-white md:block flex justify-center md:text-right md:mr-14 text-[35px] font-daru">
         About Me
       </h1>
-      <div className="flex justify-end mr-14 mt-4">
-        <p className="w-[55%] text-right text-[20px] font-poppins text-white">
-          Self taught Web Developer and prospective Junior Software Engineer
-          with a working knowledge of the latest front-end languages,
-          frameworks, and libraries.
+      <div className="md:flex md:justify-end text-center md:mr-14 md:mt-4 mt-6">
+        <p className="md:w-[75%] md:text-right text-[20px] font-poppins text-white">
+          After dropping out of University in 2022, I began chasing a career in
+          software, perfecting my engineering skills, keeping my focus on
+          front-end tools and practices in hopes of becoming a junior engineer.
+          The languages, tools, and frameworks that I have become proficient
+          with are as follows:
         </p>
       </div>
-      <div className="flex flex-row justify-between mt-6">
+      <div className="flex md:flex-row flex-col justify-between mt-6">
         <AboutBox
           title="Langauges"
           firstSpace={<BoxItem name="HTML" image={html} />}

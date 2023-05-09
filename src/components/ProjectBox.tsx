@@ -4,26 +4,34 @@ type PortfolioBoxProps = {
   image: string;
   title: string;
   description: string;
-  tools?: string;
-  color?: string;
+  firstTool?: string;
+  secondTool?: string;
+  thirdTool?: string;
 };
 
 const PortfolioBox = ({
   image,
   title,
   description,
-  tools,
-  color,
+  firstTool,
+  secondTool,
+  thirdTool,
 }: PortfolioBoxProps) => {
   return (
     <main
-      className={`p-4 flex flex-col bg-${color} w-[20%] items-center h-[35vh] rounded-lg border-2 border-white`}
+      className={`flex flex-col items-center rounded-lg h-[38vh] border-2 border-white hover:scale-110 delay-100 duration-300`}
     >
-      <img className="h-[50%] w-full" src={image} />
-      <div className="mt-4 text-center">
+      <img className="w-[20rem]" src={image} />
+      <div
+        className={`text-center text-white rounded-lg bg-[#1E1E1E] w-full h-full pt-4`}
+      >
+        <div className="flex flex-row justify-center h-[26px] mt-2 mb-4 space-x-4">
+          <img src={firstTool} />
+          <img src={secondTool} />
+          <img src={thirdTool} />
+        </div>
         <h1 className="font-poppins text-[20px]">{title}</h1>
         <p>{description}</p>
-        <p>{tools}</p>
       </div>
     </main>
   );
