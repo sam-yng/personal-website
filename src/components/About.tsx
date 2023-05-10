@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBox from "./AboutBox";
+import SkillsBox from "./SkillsBox";
 import BoxItem from "./BoxItem";
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
@@ -31,21 +31,21 @@ const About: React.FC = () => {
         </p>
       </div>
       <div className="flex md:flex-row flex-col md:ml-8 justify-between mt-6">
-        <AboutBox
+        <SkillsBox
           title="Langauges"
           firstSpace={<BoxItem name="HTML" image={html} />}
           secondSpace={<BoxItem name="CSS" image={css} />}
           thirdSpace={<BoxItem name="Javascript" image={javascript} />}
           fourthSpace={<BoxItem name="Typescript" image={typescript} />}
         />
-        <AboutBox
+        <SkillsBox
           title="Libraries & Frameworks"
           firstSpace={<BoxItem name="React" image={react} />}
           secondSpace={<BoxItem name="Tailwind" image={tailwind} />}
           thirdSpace={<BoxItem name="Node.js" image={node} />}
           fourthSpace={<BoxItem name="Flask" image={flask} />}
         />
-        <AboutBox
+        <SkillsBox
           title="Tools"
           firstSpace={<BoxItem name="Git" image={git} />}
           secondSpace={<BoxItem name="Figma" image={figma} />}

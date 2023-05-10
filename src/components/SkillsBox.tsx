@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 
-type AboutBoxProps = {
+type SkillsBoxProps = {
   title: string;
   firstSpace: ReactElement;
   secondSpace: ReactElement;
@@ -8,13 +8,13 @@ type AboutBoxProps = {
   fourthSpace?: ReactElement;
 };
 
-export const AboutBox = ({
+export const SkillsBox = ({
   title,
   firstSpace,
   secondSpace,
   thirdSpace,
   fourthSpace,
-}: AboutBoxProps) => {
+}: SkillsBoxProps) => {
   return (
     <main className="flex flex-col md:w-full sm:w-[70%] md:mx-auto mx-12 text-center xl:mx-14 mt-12">
       <h1 className="text-white text-[20px] font-poppins">{title}</h1>
@@ -28,4 +28,4 @@ export const AboutBox = ({
   );
 };
 
-export default AboutBox;
+export default SkillsBox;
