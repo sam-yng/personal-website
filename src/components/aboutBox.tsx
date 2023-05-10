@@ -27,3 +27,5 @@ export const AboutBox = ({
     </main>
   );
 };
+
+export default AboutBox;
