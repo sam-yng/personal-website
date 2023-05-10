@@ -23,7 +23,7 @@ const Portfolio = () => {
         <ProjectBox
           image={stuvise}
           title="Stuvise.com"
-          description="The marketting website for Stuvise"
+          description="The marketing website for Stuvise"
           firstTool={typescript}
           secondTool={tailwind}
           thirdTool={react}
