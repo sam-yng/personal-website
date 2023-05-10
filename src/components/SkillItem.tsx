@@ -1,11 +1,11 @@
 import React from "react";
 
-type BoxItemProps = {
+type SkillItemProps = {
   name: string;
   image: string;
 };
 
-const BoxItem = ({ name, image }: BoxItemProps) => {
+const SkillItem = ({ name, image }: SkillItemProps) => {
   return (
     <main className="flex flex-row justify-between text-left mx-6 my-4">
       <img src={image} />
@@ -16,4 +16,4 @@ const BoxItem = ({ name, image }: BoxItemProps) => {
   );
 };
 
-export default BoxItem;
+export default SkillItem;

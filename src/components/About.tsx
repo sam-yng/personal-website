@@ -1,6 +1,6 @@
 import React from "react";
 import SkillsBox from "./SkillsBox";
-import BoxItem from "./BoxItem";
+import SkillItem from "./SkillItem";
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
 import javascript from "../assets/logos/javascript.png";
@@ -33,23 +33,23 @@ const About: React.FC = () => {
       <div className="flex md:flex-row flex-col md:ml-8 justify-between mt-6">
         <SkillsBox
           title="Langauges"
-          firstSpace={<BoxItem name="HTML" image={html} />}
-          secondSpace={<BoxItem name="CSS" image={css} />}
-          thirdSpace={<BoxItem name="Javascript" image={javascript} />}
-          fourthSpace={<BoxItem name="Typescript" image={typescript} />}
+          firstSpace={<SkillItem name="HTML" image={html} />}
+          secondSpace={<SkillItem name="CSS" image={css} />}
+          thirdSpace={<SkillItem name="Javascript" image={javascript} />}
+          fourthSpace={<SkillItem name="Typescript" image={typescript} />}
         />
         <SkillsBox
           title="Libraries & Frameworks"
-          firstSpace={<BoxItem name="React" image={react} />}
-          secondSpace={<BoxItem name="Tailwind" image={tailwind} />}
-          thirdSpace={<BoxItem name="Node.js" image={node} />}
-          fourthSpace={<BoxItem name="Flask" image={flask} />}
+          firstSpace={<SkillItem name="React" image={react} />}
+          secondSpace={<SkillItem name="Tailwind" image={tailwind} />}
+          thirdSpace={<SkillItem name="Node.js" image={node} />}
+          fourthSpace={<SkillItem name="Flask" image={flask} />}
         />
         <SkillsBox
           title="Tools"
-          firstSpace={<BoxItem name="Git" image={git} />}
-          secondSpace={<BoxItem name="Figma" image={figma} />}
-          thirdSpace={<BoxItem name="Google Analytics" image={ga} />}
+          firstSpace={<SkillItem name="Git" image={git} />}
+          secondSpace={<SkillItem name="Figma" image={figma} />}
+          thirdSpace={<SkillItem name="Google Analytics" image={ga} />}
         />
       </div>
     </main>
