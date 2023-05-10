@@ -8,7 +8,7 @@ type AboutBoxProps = {
   fourthSpace?: ReactElement;
 };
 
-const AboutBox = ({
+export const AboutBox = ({
   title,
   firstSpace,
   secondSpace,
@@ -27,5 +27,3 @@ const AboutBox = ({
     </main>
   );
 };
-
-export default AboutBox;

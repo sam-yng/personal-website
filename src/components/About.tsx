@@ -1,5 +1,5 @@
 import React from "react";
-import AboutBox from "./AboutBox";
+import { AboutBox } from "./AboutBox";
 import BoxItem from "./BoxItem";
 import html from "../assets/logos/html.png";
 import css from "../assets/logos/css.png";
