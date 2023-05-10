@@ -15,20 +15,22 @@ import ga from "../assets/logos/GA.png";
 
 const About: React.FC = () => {
   return (
-    <main className="md:h-[100vh] md:block pt-20 md:pt-12 mx-6" id="about">
-      <h1 className="text-white md:block flex justify-center md:text-right md:mr-14 text-[35px] font-daru">
+    <main
+      className="md:h-[100vh] lg:mx-0 md:block pt-20 md:pt-12 mx-6"
+      id="about"
+    >
+      <h1 className="text-white lg:mr-0 md:block flex justify-center md:text-right xl:mr-14 text-[35px] font-daru">
         About Me
       </h1>
-      <div className="md:flex md:justify-end text-center md:mr-14 md:mt-4 mt-6">
-        <p className="md:w-[75%] md:text-right text-[20px] font-poppins text-white">
-          After dropping out of University in 2022, I began chasing a career in
-          software, perfecting my engineering skills, keeping my focus on
-          front-end tools and practices in hopes of becoming a junior engineer.
-          The languages, tools, and frameworks that I have become proficient
-          with are as follows:
+      <div className="md:flex md:justify-end text-center lg:mr-0 xl:mr-14 md:mt-4 mt-6">
+        <p className="lg:w-[75%] md:w-full md:text-right text-[20px] font-poppins text-white">
+          In 2022, I decided to drop out of university and pursue a career in
+          software development. I have been honing my engineering skills and
+          focusing, primarily, on front-end tools and practices with the goal to
+          become a junior engineer. My proficiencies are as follows:
         </p>
       </div>
-      <div className="flex md:flex-row flex-col justify-between mt-6">
+      <div className="flex md:flex-row flex-col md:ml-8 justify-between mt-6">
         <AboutBox
           title="Langauges"
           firstSpace={<BoxItem name="HTML" image={html} />}

@@ -8,9 +8,9 @@ const Intro: React.FC = () => {
     <main className="flex md:h-[85vh] flex-col md:flex-row md:-mb-26 md:pt-28 text-white md:justify-center">
       <img
         src={me}
-        className="md:h-[28rem] md:block hidden md:w-auto w-[16rem] md:-ml-10 rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
+        className="md:h-[28rem] md:block hidden md:w-auto sm:w-[16rem] rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
       />
-      <article className="md:ml-16 md:w-[45%] mx-4 md:text-left text-center md:mt-0 mt-12 flex flex-col md:h-[28rem] justify-center">
+      <article className="md:ml-16 md:w-full lg:w-[45%] mx-4 md:mx-6 md:text-left text-center md:mt-0 mt-12 flex flex-col md:h-[28rem] justify-center">
         <h1 className="font-daru md:text-[35px] text-[25px]">
           Hi! I&apos;m Sam 🤠
         </h1>

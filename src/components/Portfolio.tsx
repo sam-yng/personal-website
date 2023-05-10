@@ -8,6 +8,7 @@ import typescript from "../assets/logos/typescript.png";
 import react from "../assets/logos/react.png";
 import tailwind from "../assets/logos/tailwind.png";
 import flask from "../assets/logos/flask.png";
+import advice from "../assets/projects/advice.png";
 
 const Portfolio = () => {
   return (
@@ -15,7 +16,7 @@ const Portfolio = () => {
       className="md:h-[100vh] md:ml-14 md:mr-14 pt-20 md:pt-6 md:w-auto w-[75%] pb-12 flex md:block mx-auto flex-col"
       id="portfolio"
     >
-      <h1 className="text-white md:ml-6 text-[35px] mb-6 md:block flex justify-center font-daru">
+      <h1 className="text-white md:ml-8 text-[35px] mb-6 md:block flex justify-center font-daru">
         Portfolio
       </h1>
       <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 md:justify-center md:my-10">
@@ -39,20 +40,18 @@ const Portfolio = () => {
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/reminders-clone"
         />
-        <div className="md:hidden">
-          <ProjectBox
-            image={chess}
-            title="Chess Game"
-            description="A basic chess program"
-            firstTool={javascript}
-            secondTool={tailwind}
-            thirdTool={flask}
-            viewSrc={undefined}
-            codeSrc="https://github.com/sam-yng/cs50-final"
-          />
-        </div>
       </div>
-      <div className="md:flex md:justify-center hidden">
+      <div className="flex md:flex-row flex-col space-y-10 md:space-y-0 md:space-x-10 md:justify-center md:my-1 mt-12">
+        <ProjectBox
+          image={advice}
+          title="Advice Generator"
+          description="A simple frontend mentor project"
+          firstTool={typescript}
+          secondTool={tailwind}
+          thirdTool={react}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/advice-generator"
+        />
         <ProjectBox
           image={chess}
           title="Chess Game"
