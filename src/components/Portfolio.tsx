@@ -11,6 +11,7 @@ import height from "../assets/projects/height.png";
 import advice from "../assets/projects/advice.png";
 import next from "../assets/logos/nextjs.png";
 import flask from "../assets/logos/flask.png";
+import css from "../assets/logos/css.png";
 
 const Portfolio = () => {
   return (
@@ -69,7 +70,7 @@ const Portfolio = () => {
           title="Chess Game"
           description="A basic chess program"
           firstTool={javascript}
-          secondTool={tailwind}
+          secondTool={css}
           thirdTool={flask}
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/cs50-final"
