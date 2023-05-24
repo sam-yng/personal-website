@@ -10,6 +10,7 @@ import tailwind from "../assets/logos/tailwind.png";
 import height from "../assets/projects/height.png";
 import advice from "../assets/projects/advice.png";
 import next from "../assets/logos/nextjs.png";
+import node from "../assets/logos/node.png";
 
 const Portfolio = () => {
   return (
@@ -69,6 +70,7 @@ const Portfolio = () => {
           description="A basic chess program"
           firstTool={javascript}
           secondTool={tailwind}
+          thirdTool={node}
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/cs50-final"
         />
