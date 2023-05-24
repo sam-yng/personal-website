@@ -7,8 +7,9 @@ import javascript from "../assets/logos/javascript.png";
 import typescript from "../assets/logos/typescript.png";
 import react from "../assets/logos/react.png";
 import tailwind from "../assets/logos/tailwind.png";
-import flask from "../assets/logos/flask.png";
+import height from "../assets/projects/height.png";
 import advice from "../assets/projects/advice.png";
+import next from "../assets/logos/nextjs.png";
 
 const Portfolio = () => {
   return (
@@ -40,6 +41,16 @@ const Portfolio = () => {
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/reminders-clone"
         />
+        <ProjectBox
+          image={height}
+          title="Height Calculator"
+          description="A joke of a next.js project"
+          firstTool={javascript}
+          secondTool={tailwind}
+          thirdTool={next}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/height-calculator"
+        />
       </div>
       <div className="flex md:flex-row flex-col space-y-10 md:space-y-0 md:space-x-10 md:justify-center md:my-1 mt-12">
         <ProjectBox
@@ -58,7 +69,6 @@ const Portfolio = () => {
           description="A basic chess program"
           firstTool={javascript}
           secondTool={tailwind}
-          thirdTool={flask}
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/cs50-final"
         />

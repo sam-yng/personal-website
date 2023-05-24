@@ -8,7 +8,7 @@ import typescript from "../assets/logos/typescript.png";
 import react from "../assets/logos/react.png";
 import tailwind from "../assets/logos/tailwind.png";
 import node from "../assets/logos/node.png";
-import flask from "../assets/logos/flask.png";
+import next from "../assets/logos/nextjs.png";
 import git from "../assets/logos/Git.png";
 import figma from "../assets/logos/Figma.png";
 import ga from "../assets/logos/GA.png";
@@ -43,7 +43,7 @@ const About: React.FC = () => {
           firstSpace={<SkillItem name="React" image={react} />}
           secondSpace={<SkillItem name="Tailwind" image={tailwind} />}
           thirdSpace={<SkillItem name="Node.js" image={node} />}
-          fourthSpace={<SkillItem name="Flask" image={flask} />}
+          fourthSpace={<SkillItem name="Next.js" image={next} />}
         />
         <SkillsBox
           title="Tools"
