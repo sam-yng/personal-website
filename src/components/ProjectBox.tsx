@@ -1,6 +1,7 @@
 import React from "react";
 import code from "../assets/images/code.png";
 import eye from "../assets/images/eye.png";
+import classNames from "classnames";
 
 type PortfolioBoxProps = {
   image: string;
@@ -25,9 +26,19 @@ const PortfolioBox = ({
 }: PortfolioBoxProps) => {
   return (
     <main
-      className={`flex flex-col items-center rounded-lg border-2 border-white hover:scale-110 delay-100 duration-300`}
+      className={classNames(
+        "flex",
+        "flex-col",
+        "items-center",
+        "rounded-lg",
+        "border-2",
+        "border-white",
+        "hover:scale-110",
+        "delay-100",
+        "duration-300"
+      )}
     >
-      <img className="w-[18rem]" src={image} />
+      <img src={image} />
       <div
         className={`text-center text-white rounded-lg bg-[#1E1E1E] w-full h-full pt-4`}
       >

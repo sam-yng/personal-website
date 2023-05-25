@@ -4,11 +4,22 @@ import { Link } from "react-scroll";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="w-full flex flex-row md:items-center justify-center">
-      <h1 className="text-white md:text-[40px] text-[30px] mt-4 font-daru">
+    <nav className="w-full flex flex-row items-center justify-center">
+      <h1 className="text-white md:text-[40px] text-[30px] font-daru">
         Sam Edgeworth
       </h1>
-      <ul className="ml-auto text-white text-[18px] md:flex md:flex-row font-poppins space-x-8 hidden">
+      <ul
+        className={classNames(
+          "ml-auto",
+          "text-white",
+          "text-[18px]",
+          "md:flex",
+          "md:flex-row",
+          "font-poppins",
+          "space-x-8",
+          "hidden"
+        )}
+      >
         <li
           className={classNames(
             "hover:cursor-pointer",
@@ -17,7 +28,6 @@ const NavBar: React.FC = () => {
             "transition-colors",
             "rounded-xl",
             "px-3",
-            "py-1",
             "delay-100",
             "duration-300"
           )}
@@ -34,7 +44,6 @@ const NavBar: React.FC = () => {
             "transition-colors",
             "rounded-xl",
             "px-3",
-            "py-1",
             "delay-100",
             "duration-300"
           )}
@@ -51,7 +60,6 @@ const NavBar: React.FC = () => {
             "transition-colors",
             "rounded-xl",
             "px-3",
-            "py-1",
             "delay-100",
             "duration-300"
           )}

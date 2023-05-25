@@ -12,17 +12,50 @@ import advice from "../assets/projects/advice.png";
 import next from "../assets/logos/nextjs.png";
 import flask from "../assets/logos/flask.png";
 import css from "../assets/logos/css.png";
+import mkdown from "../assets/projects/mkdown.png";
+import classNames from "classnames";
 
 const Portfolio = () => {
   return (
     <main
-      className="md:h-[100vh] md:ml-14 md:mr-14 pt-20 md:pt-6 md:w-auto w-[75%] pb-12 flex md:block mx-auto flex-col"
+      className={classNames(
+        "md:h-[100vh]",
+        "pt-20",
+        "md:pt-6",
+        "pb-12",
+        "flex",
+        "md:block",
+        "mx-auto",
+        "flex-col",
+        "lg:mb-12"
+      )}
       id="portfolio"
     >
-      <h1 className="text-white md:ml-8 text-[35px] mb-6 md:block flex justify-center font-daru">
+      <h1
+        className={classNames(
+          "text-white",
+          "text-[35px]",
+          "mb-6",
+          "md:block",
+          "flex",
+          "justify-center",
+          "font-daru"
+        )}
+      >
         Portfolio
       </h1>
-      <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 md:justify-center md:my-10">
+      <div
+        className={classNames(
+          "flex",
+          "flex-col",
+          "md:flex-row",
+          "space-y-10",
+          "md:space-y-0",
+          "md:space-x-10",
+          "md:justify-center",
+          "md:my-10"
+        )}
+      >
         <ProjectBox
           image={stuvise}
           title="Stuvise.com"
@@ -36,7 +69,7 @@ const Portfolio = () => {
         <ProjectBox
           image={reminders}
           title="Reminders App"
-          description="A clone of the apple reminders app"
+          description="A clone of the Apple reminders app"
           firstTool={typescript}
           secondTool={tailwind}
           thirdTool={react}
@@ -54,7 +87,19 @@ const Portfolio = () => {
           codeSrc="https://github.com/sam-yng/height-calculator"
         />
       </div>
-      <div className="flex md:flex-row flex-col space-y-10 md:space-y-0 md:space-x-10 md:justify-center md:my-1 mt-12">
+      <div
+        className={classNames(
+          "flex",
+          "md:flex-row",
+          "flex-col",
+          "space-y-10",
+          "md:space-y-0",
+          "md:space-x-10",
+          "md:justify-center",
+          "md:my-1",
+          "mt-12"
+        )}
+      >
         <ProjectBox
           image={advice}
           title="Advice Generator"
@@ -74,6 +119,16 @@ const Portfolio = () => {
           thirdTool={flask}
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/cs50-final"
+        />
+        <ProjectBox
+          image={mkdown}
+          title="Markdown Editor"
+          description="A markdown editor using codemirror"
+          firstTool={typescript}
+          secondTool={tailwind}
+          thirdTool={next}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/markdown-editor"
         />
       </div>
     </main>

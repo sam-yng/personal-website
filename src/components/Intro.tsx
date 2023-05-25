@@ -2,15 +2,55 @@ import React from "react";
 import me from "../assets/images/me2.jpg";
 import github from "../assets/logos/github.png";
 import linked from "../assets/logos/bigLinkedIn.png";
+import classNames from "classnames";
 
 const Intro: React.FC = () => {
   return (
-    <main className="flex md:h-[85vh] flex-col md:flex-row md:-mb-26 md:pt-28 text-white md:justify-center">
+    <main
+      className={classNames(
+        "flex",
+        "md:h-[85vh]",
+        "flex-col",
+        "lg:flex-row",
+        "md:-mb-26",
+        "md:pt-28",
+        "text-white",
+        "md:justify-center",
+        "md:mb-24",
+        "lg:mb-0"
+      )}
+    >
       <img
         src={me}
-        className="md:h-[28rem] md:block hidden md:w-auto sm:w-[16rem] rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
+        className={classNames(
+          "md:h-[28rem]",
+          "md:block",
+          "hidden",
+          "rounded-xl",
+          "border-white",
+          "border-2",
+          "hover:scale-110",
+          "delay-100",
+          "duration-300",
+          "md:mx-auto",
+          "md:mt-20",
+          "lg:mt-0"
+        )}
       />
-      <article className="md:ml-16 md:w-full lg:w-[45%] mx-4 md:mx-6 md:text-left text-center md:mt-0 mt-12 flex flex-col md:h-[28rem] justify-center">
+      <article
+        className={classNames(
+          "md:ml-16",
+          "md:text-left",
+          "text-center",
+          "mt-12",
+          "flex",
+          "flex-col",
+          "md:h-[28rem]",
+          "justify-center",
+          "md:mt-24",
+          "lg:mt-0"
+        )}
+      >
         <h1 className="font-daru md:text-[35px] text-[25px]">
           Hi! I&apos;m Sam 🤠
         </h1>
@@ -20,18 +60,46 @@ const Intro: React.FC = () => {
           frameworks, and libraries.
           <br></br>. . .
         </p>
-        <div className="mt-6 flex flex-row md:justify-start justify-center space-x-6">
+        <div
+          className={classNames(
+            "mt-6",
+            "flex",
+            "flex-shrink",
+            "flex-row",
+            "md:justify-start",
+            "justify-center",
+            "space-x-6"
+          )}
+        >
           <a
             href="https://github.com/sam-yng"
             target="blank"
-            className="rounded-md bg-white md:h-12 h-10 border-2 border-white md:px-4 px-2"
+            className={classNames(
+              "rounded-md",
+              "bg-white",
+              "md:h-12",
+              "h-10",
+              "border-2",
+              "border-white",
+              "md:px-4",
+              "px-2"
+            )}
           >
             <img className="md:h-10 h-8" src={github} />
           </a>
           <a
             target="blank"
             href="https://www.linkedin.com/in/sam-youngg/"
-            className="rounded-md bg-white md:h-12 h-10 border-2 border-white md:px-4 px-2"
+            className={classNames(
+              "rounded-md",
+              "bg-white",
+              "md:h-12",
+              "h-10",
+              "border-2",
+              "border-white",
+              "md:px-4",
+              "px-2"
+            )}
           >
             <img className="md:h-10 h-8" src={linked} />
           </a>
@@ -39,7 +107,16 @@ const Intro: React.FC = () => {
       </article>
       <img
         src={me}
-        className="md:hidden w-[75%] mx-auto mt-8 rounded-xl border-white border-2 hover:scale-110 delay-100 duration-300"
+        className={classNames(
+          "md:hidden",
+          "mx-auto",
+          "rounded-xl",
+          "border-white",
+          "border-2",
+          "hover:scale-110",
+          "delay-100",
+          "duration-300"
+        )}
       />
     </main>
   );
