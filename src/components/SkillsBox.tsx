@@ -17,34 +17,35 @@ export const SkillsBox = ({
   fourthSpace,
 }: SkillsBoxProps) => {
   return (
-    <main
-      className={classNames(
-        "flex",
-        "flex-col",
-        "md:w-full",
-        "sm:w-full",
-        "md:mx-4",
-        "text-center",
-        "xl:mx-14",
-        "mt-12"
-      )}
-    >
-      <h1 className="text-white text-[20px] font-poppins">{title}</h1>
+    <main className={classNames("text-center", "mb-12", "mx-4")}>
+      <h1
+        className={classNames(
+          "text-white",
+          "text-[20px]",
+          "font-poppins",
+          "mb-4"
+        )}
+      >
+        {title}
+      </h1>
       <div
         className={classNames(
-          "flex",
-          "flex-col",
-          "mt-6",
           "border-2",
           "border-white",
           "rounded-md",
           "bg-[#1E1E1E]",
-          "justify-between",
-          "md:h-full",
-          "p-4",
           "hover:scale-110",
           "delay-100",
-          "duration-300"
+          "duration-300",
+          "flex",
+          "flex-col",
+          "justify-between",
+          "p-4",
+          "lg:w-[20vw]",
+          "lg:h-[50vh]",
+          "md:mx-52",
+          "lg:mx-0",
+          "sm:mx-32"
         )}
       >
         {firstSpace}

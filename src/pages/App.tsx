@@ -8,16 +8,15 @@ const App: React.FC = () => {
   return (
     <main
       className={classNames(
-        "lg:px-[12rem]",
-        "lg:py-10",
-        "md:px-[10rem]",
-        "md:py-8",
-        "px-10",
-        "md:py-8",
         "bg-gradient-to-b",
         "from-[#121212]",
         "via-[#1E1E1E]",
-        "to-[#121212]"
+        "to-[#121212]",
+        "px-10",
+        "space-y-14",
+        "xl:px-48",
+        "lg:px-32",
+        "lg:space-y-24"
       )}
     >
       <Main />

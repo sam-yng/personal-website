@@ -35,7 +35,11 @@ const PortfolioBox = ({
         "border-white",
         "hover:scale-110",
         "delay-100",
-        "duration-300"
+        "duration-300",
+        "md:w-[50%]",
+        "md:mx-auto",
+        "sm:w-[50%]",
+        "sm:mx-auto"
       )}
     >
       <img src={image} />

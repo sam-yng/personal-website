@@ -5,7 +5,20 @@ import { Link } from "react-scroll";
 const NavBar: React.FC = () => {
   return (
     <nav className="w-full flex flex-row items-center justify-center">
-      <h1 className="text-white md:text-[40px] text-[30px] font-daru">
+      <h1
+        className={classNames(
+          "text-white",
+          "text-[35px]",
+          "font-daru",
+          "border-2",
+          "border-white",
+          "p-2",
+          "lg:border-0",
+          "lg:p-0",
+          "md:border-0",
+          "md:p-0"
+        )}
+      >
         Sam Edgeworth
       </h1>
       <ul
@@ -18,6 +31,10 @@ const NavBar: React.FC = () => {
           "font-poppins",
           "space-x-8",
           "hidden"
+          // "sm:text-blue-400",
+          // "md:text-green-400",
+          // "lg:text-red-400",
+          // "xl:text-purple-400"
         )}
       >
         <li

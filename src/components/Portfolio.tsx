@@ -19,15 +19,11 @@ const Portfolio = () => {
   return (
     <main
       className={classNames(
-        "md:h-[100vh]",
-        "pt-20",
-        "md:pt-6",
-        "pb-12",
         "flex",
-        "md:block",
-        "mx-auto",
+        "lg:block",
         "flex-col",
-        "lg:mb-12"
+        "pb-14",
+        "lg:pt-10"
       )}
       id="portfolio"
     >
@@ -35,11 +31,11 @@ const Portfolio = () => {
         className={classNames(
           "text-white",
           "text-[35px]",
-          "mb-6",
-          "md:block",
+          "lg:block",
           "flex",
           "justify-center",
-          "font-daru"
+          "font-daru",
+          "mb-6"
         )}
       >
         Portfolio
@@ -48,12 +44,12 @@ const Portfolio = () => {
         className={classNames(
           "flex",
           "flex-col",
-          "md:flex-row",
+          "lg:flex-row",
           "space-y-10",
-          "md:space-y-0",
-          "md:space-x-10",
-          "md:justify-center",
-          "md:my-10"
+          "lg:space-y-0",
+          "lg:space-x-10",
+          "lg:justify-center",
+          "lg:my-10"
         )}
       >
         <ProjectBox
@@ -90,13 +86,13 @@ const Portfolio = () => {
       <div
         className={classNames(
           "flex",
-          "md:flex-row",
+          "lg:flex-row",
           "flex-col",
           "space-y-10",
-          "md:space-y-0",
-          "md:space-x-10",
-          "md:justify-center",
-          "md:my-1",
+          "lg:space-y-0",
+          "lg:space-x-10",
+          "lg:justify-center",
+          "lg:my-1",
           "mt-12"
         )}
       >

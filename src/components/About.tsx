@@ -16,41 +16,29 @@ import classNames from "classnames";
 
 const About: React.FC = () => {
   return (
-    <main className="md:h-[100vh] lg:mx-0 md:block pt-20 md:pt-12" id="about">
+    <main className={classNames("lg:pt-10")} id="about">
       <h1
         className={classNames(
           "text-white",
-          "lg:mr-0",
-          "md:block",
+          "lg:block",
           "flex",
           "justify-center",
-          "md:text-right",
-          "xl:mr-14",
+          "lg:text-right",
           "text-[35px]",
-          "font-daru"
+          "font-daru",
+          "mb-6"
         )}
       >
         About Me
       </h1>
-      <div
-        className={classNames(
-          "md:flex",
-          "md:justify-end",
-          "text-center",
-          "lg:mr-0",
-          "xl:mr-14",
-          "md:mt-4",
-          "mt-6"
-        )}
-      >
+      <div className={classNames("lg:flex", "lg:justify-end", "text-center")}>
         <p
           className={classNames(
-            "md:text-right",
-            "text-[20px]",
+            "lg:text-right",
+            "text-[18px]",
             "font-poppins",
             "text-white",
-            "md:w-full",
-            "lg:w-[70%]"
+            "lg:w-[55vw]"
           )}
         >
           In 2022, I decided to drop out of university and pursue a career in
@@ -59,7 +47,16 @@ const About: React.FC = () => {
           become a junior engineer. My proficiencies are as follows:
         </p>
       </div>
-      <div className="flex md:flex-row flex-col justify-between mt-6">
+      <div
+        className={classNames(
+          "flex",
+          "lg:flex-row",
+          "flex-col",
+          "justify-between",
+          "mt-10",
+          "lg:mt-20"
+        )}
+      >
         <SkillsBox
           title="Langauges"
           firstSpace={<SkillItem name="HTML" image={html} />}

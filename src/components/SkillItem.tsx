@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import React from "react";
 
 type SkillItemProps = {
@@ -7,10 +8,27 @@ type SkillItemProps = {
 
 const SkillItem = ({ name, image }: SkillItemProps) => {
   return (
-    <main className="flex flex-row justify-between text-left px-6 my-4">
-      <img className="w-14" src={image} />
-      <div className="flex flex-col justify-center w-16">
-        <h1 className="text-white inline-block">{name}</h1>
+    <main
+      className={classNames(
+        "flex",
+        "flex-row",
+        "justify-between",
+        "px-6",
+        "my-4"
+      )}
+    >
+      <img className={classNames("w-14")} src={image} />
+      <div className={classNames("flex", "flex-col", "justify-center")}>
+        <h1
+          className={classNames(
+            "text-white",
+            "inline-block",
+            "text-[18px]",
+            "text-right"
+          )}
+        >
+          {name}
+        </h1>
       </div>
     </main>
   );
