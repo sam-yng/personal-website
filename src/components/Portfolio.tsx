@@ -13,6 +13,7 @@ import next from "../assets/logos/nextjs.png";
 import flask from "../assets/logos/flask.png";
 import css from "../assets/logos/css.png";
 import mkdown from "../assets/projects/mkdown.png";
+import valuers from "../assets/projects/valuers.png";
 import classNames from "classnames";
 
 const Portfolio = () => {
@@ -49,7 +50,9 @@ const Portfolio = () => {
           "lg:space-y-0",
           "lg:space-x-10",
           "lg:justify-center",
-          "lg:my-10"
+          "lg:my-10",
+          "lg:w-[66%]",
+          "lg:mx-auto"
         )}
       >
         <ProjectBox
@@ -63,24 +66,14 @@ const Portfolio = () => {
           codeSrc="https://github.com/stuvise/stuvise-dot-com"
         />
         <ProjectBox
-          image={reminders}
-          title="Reminders App"
-          description="A clone of the Apple reminders app"
+          image={valuers}
+          title="Sydney Property Valuers"
+          description="The website for a local property valuer"
           firstTool={typescript}
           secondTool={tailwind}
-          thirdTool={react}
-          viewSrc={undefined}
-          codeSrc="https://github.com/sam-yng/reminders-clone"
-        />
-        <ProjectBox
-          image={height}
-          title="Height Calculator"
-          description="A joke of a next.js project"
-          firstTool={javascript}
-          secondTool={tailwind}
           thirdTool={next}
-          viewSrc={undefined}
-          codeSrc="https://github.com/sam-yng/height-calculator"
+          viewSrc="https://www.sydneypropertyvaluers.com/"
+          codeSrc="https://github.com/sam-yng/kent-v3"
         />
       </div>
       <div
@@ -106,6 +99,42 @@ const Portfolio = () => {
           viewSrc={undefined}
           codeSrc="https://github.com/sam-yng/advice-generator"
         />
+        <ProjectBox
+          image={reminders}
+          title="Reminders App"
+          description="A clone of the Apple reminders app"
+          firstTool={typescript}
+          secondTool={tailwind}
+          thirdTool={react}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/reminders-clone"
+        />
+        <ProjectBox
+          image={height}
+          title="Height Calculator"
+          description="A joke of a next.js project"
+          firstTool={javascript}
+          secondTool={tailwind}
+          thirdTool={next}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/height-calculator"
+        />
+      </div>
+      <div
+        className={classNames(
+          "flex",
+          "flex-col",
+          "lg:flex-row",
+          "space-y-10",
+          "lg:space-y-0",
+          "lg:space-x-10",
+          "lg:justify-center",
+          "lg:my-10",
+          "mt-12",
+          "lg:w-[66%]",
+          "lg:mx-auto"
+        )}
+      >
         <ProjectBox
           image={chess}
           title="Chess Game"
