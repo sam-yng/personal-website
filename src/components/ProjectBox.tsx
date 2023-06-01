@@ -59,15 +59,16 @@ const PortfolioBox = ({
             target="blank"
             className={`rounded-md bg-white border-2 border-white px-3 ${
               viewSrc === undefined ? "opacity-50" : "opacity-100"
-            }
-            ${codeSrc === undefined ? "opacity-50" : "opacity-100"}`}
+            }`}
           >
             <img className="h-6" src={eye} />
           </a>
           <a
             href={codeSrc}
             target="blank"
-            className="rounded-md bg-white border-2 border-white px-3"
+            className={`rounded-md bg-white border-2 border-white px-3 ${
+              codeSrc === undefined ? "opacity-50" : "opacity-100"
+            }`}
           >
             <img className="h-6" src={code} />
           </a>
