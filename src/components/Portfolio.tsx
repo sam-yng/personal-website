@@ -73,7 +73,7 @@ const Portfolio = () => {
           secondTool={tailwind}
           thirdTool={next}
           viewSrc="https://www.sydneypropertyvaluers.com/"
-          codeSrc="https://github.com/sam-yng/kent-v3"
+          codeSrc={undefined}
         />
       </div>
       <div
