@@ -15,6 +15,7 @@ import css from "../assets/logos/css.png";
 import mkdown from "../assets/projects/mkdown.png";
 import valuers from "../assets/projects/valuers.png";
 import classNames from "classnames";
+import usersearch from "../assets/projects/usersearch.png";
 
 const Portfolio = () => {
   return (
@@ -51,7 +52,6 @@ const Portfolio = () => {
           "lg:space-x-10",
           "lg:justify-center",
           "lg:my-10",
-          "lg:w-[66%]",
           "lg:mx-auto"
         )}
       >
@@ -74,6 +74,16 @@ const Portfolio = () => {
           thirdTool={next}
           viewSrc="https://www.sydneypropertyvaluers.com/"
           codeSrc={undefined}
+        />
+        <ProjectBox
+          image={usersearch}
+          title="GitHub User Search"
+          description="A search app for GitHub users"
+          firstTool={typescript}
+          secondTool={tailwind}
+          thirdTool={next}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/github_user_search"
         />
       </div>
       <div
