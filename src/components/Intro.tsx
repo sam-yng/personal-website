@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../assets/images/me2.jpg";
+import sam from "../assets/images/sam.jpg";
 import github from "../assets/logos/github.png";
 import linked from "../assets/logos/bigLinkedIn.png";
 import classNames from "classnames";
@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
       )}
     >
       <img
-        src={me}
+        src={sam}
         className={classNames(
           "rounded-xl",
           "border-white",
@@ -32,7 +32,7 @@ const Intro: React.FC = () => {
           "hidden",
           "lg:block",
           "md:block",
-          "h-[28rem]",
+          "h-[30rem]",
           "my-auto"
         )}
       />
@@ -50,9 +50,9 @@ const Intro: React.FC = () => {
           Hi! I&apos;m Sam 🤠
         </h1>
         <p className="text-[18px] mt-2 lg:mt-4 font-poppins">
-          Self taught Web Developer and prospective Junior Software Engineer
-          with a working knowledge of the latest front-end languages,
-          frameworks, and libraries.
+          Web Developer and prospective Junior Software Engineer with a working
+          knowledge of the latest front-end languages, frameworks, and
+          libraries.
           <br></br>. . .
         </p>
         <div
@@ -95,7 +95,7 @@ const Intro: React.FC = () => {
           </a>
         </div>
         <img
-          src={me}
+          src={sam}
           className={classNames(
             "rounded-xl",
             "border-white",
