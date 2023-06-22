@@ -13,6 +13,7 @@ import git from "../assets/logos/Git.png";
 import figma from "../assets/logos/Figma.png";
 import ga from "../assets/logos/GA.png";
 import classNames from "classnames";
+import postman from "../assets/logos/postman.svg";
 
 const About: React.FC = () => {
   return (
@@ -76,6 +77,7 @@ const About: React.FC = () => {
           firstSpace={<SkillItem name="Git" image={git} />}
           secondSpace={<SkillItem name="Figma" image={figma} />}
           thirdSpace={<SkillItem name="Google Analytics" image={ga} />}
+          fourthSpace={<SkillItem name="Postman" image={postman} />}
         />
       </div>
     </main>
