@@ -20,7 +20,7 @@ const Intro: React.FC = () => {
         "lg:h-[75vh]"
       )}
     >
-      <img
+      {/* <img
         src={sam}
         className={classNames(
           "rounded-xl",
@@ -35,21 +35,21 @@ const Intro: React.FC = () => {
           "h-[30rem]",
           "my-auto"
         )}
-      />
+      /> */}
       <article
         className={classNames(
-          "lg:text-left",
-          "md:text-left",
           "text-center",
           "flex",
           "flex-col",
-          "justify-center"
+          "justify-center",
+          "my-48",
+          "md:my-0"
         )}
       >
         <h1 className="font-daru lg:text-[35px] text-[25px]">
           Hi! I&apos;m Sam 🤠
         </h1>
-        <p className="text-[18px] mt-2 lg:mt-4 font-poppins">
+        <p className="text-[18px] mt-2 lg:mt-4 font-poppins md:mx-36">
           Web Developer and prospective Junior Software Engineer with a working
           knowledge of the latest front-end languages, frameworks, and
           libraries.
@@ -62,9 +62,7 @@ const Intro: React.FC = () => {
             "justify-center",
             "space-x-6",
             "flex-shrink",
-            "mt-6",
-            "lg:justify-start",
-            "md:justify-start"
+            "mt-6"
           )}
         >
           <a
@@ -94,7 +92,7 @@ const Intro: React.FC = () => {
             <img className={classNames("h-10")} src={linked} />
           </a>
         </div>
-        <img
+        {/* <img
           src={sam}
           className={classNames(
             "rounded-xl",
@@ -108,7 +106,7 @@ const Intro: React.FC = () => {
             "md:hidden",
             "block"
           )}
-        />
+        /> */}
       </article>
     </main>
   );
